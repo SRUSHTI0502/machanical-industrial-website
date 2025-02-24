@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #090808;
+}
+
+/* Navbar */
+nav {
+  background-color: #222;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #333;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.mobile-menu a {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.mobile-menu a:hover {
+  background: #444;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: url('https://source.unsplash.com/1600x900/?industry,factory') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.hero .btn {
+  background: #f1c40f;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.hero .btn:hover {
+  background: #d4ac0d;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #f1c40f;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #f1c40f;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+/* General Styles */
+.projects-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://source.unsplash.com/1600x900/?industry,factory") no-repeat center/cover;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects {
+  padding: 50px 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+}
+
+.before-after {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.before-img,
+.after-img {
+  width: 48%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials */
+.testimonials {
+  background: #f8f8f8;
+  padding: 50px 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  max-width: 600px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial cite {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
